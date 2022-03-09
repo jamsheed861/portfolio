@@ -1,0 +1,45 @@
+.b{
+    width: 40%;
+    height: 50vh;
+    margin: 20px  10px;
+    border: 2px solid rgb(123, 654, 767);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+.p-browser{
+    height: 20px;
+
+    background-color:rgb(123, 654, 767) ;
+    display: flex;
+    align-items: center;
+}
+.p-circle{
+    width: 6px;
+    height: 6px;
+    margin: 3px;
+    background-color: #fff;
+}
+.p-img{
+    width: 98%;
+    height:97%;
+    
+}
+.b:hover{
+    width:39%;
+    height:49vh;
+}
+
+@media screen and (max-width:480px) {
+    .b{
+        margin-left: 24px;
+        width: 80%;
+        height: 50vh;
+        /* border: 2px solid black; */
+    }
+    .b:hover{
+        width:81%;
+        height:51vh;
+    }
+    
+    
+}
