@@ -1,25 +1,26 @@
-import React from 'react'
-import "./product.css"
+import React from 'react';
+import './product.css';
 
-
-const Product = ({img,link}) => {
+const Product = ({ image, link }) => {
   return (
     <>
-    <div className='b'>
-      <div className="p-browser">
+      <div className="b">
+        <div className="p-browser">
+          <div className="p-circle"></div>
+          <div className="p-circle"></div>
+          <div className="p-circle"></div>
+        </div>
 
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
+        <a href={link} target="_blank" rel="noreferrer">
+          <img
+            src={process.env.PUBLIC_URL + '/image/' + image}
+            alt="images"
+            className="p-img"
+          />
+        </a>
       </div>
-      
-    <a href={link} target="_blank">
-      <img src={img} alt="Weather" className='p-img'/>
-    </a>
-    
-      </div>
-      </>
-  )
-}
+    </>
+  );
+};
 
-export default Product
+export default Product;
